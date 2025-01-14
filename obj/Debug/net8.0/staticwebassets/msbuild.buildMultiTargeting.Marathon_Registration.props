@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Marathon_Registration.props" />
+</Project>

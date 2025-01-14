@@ -1,0 +1,83 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: radial-gradient(circle, #e0a760, #d66d2b);
+}
+
+.box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #ccc; /* Add a light border around the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Set a height for the box */
+    margin-top: 150px; /* Adjust the top margin */
+    width: 300px; /* Optional: Set a fixed width for the box */
+    margin-left: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.register-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.register-btn:hover {
+     background-color: #45a049;
+}
+
+form {
+    width: 50%; /* Make form elements span the full width of the box */
+}
+
+.box-form {
+    background-color: white;
+    padding: 20px; /* Reduced padding for compactness */
+    border-radius: 10px;
+    border: 2px solid #ccc; /* Light border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Align text to the left for better form readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 550px; /* Set a fixed width */
+    margin-top: 50px; /* Push the form down */
+    overflow: auto; /* Allow scroll if the content overflows */
+    height: 500px; /* Let the height adjust to content */
+}

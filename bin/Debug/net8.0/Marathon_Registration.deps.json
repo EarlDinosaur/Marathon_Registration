@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Marathon_Registration/1.0.0": {
+        "runtime": {
+          "Marathon_Registration.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Marathon_Registration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

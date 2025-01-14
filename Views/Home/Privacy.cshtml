@@ -1,0 +1,63 @@
+﻿@model Marathon_Registration.Models.UserModel
+
+<h1>Register for the Marathon</h1>
+
+<form asp-action="Privacy" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.FirstName)
+        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.DateOfBirth)
+        @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control", type = "date" })
+        @Html.ValidationMessageFor(m => m.DateOfBirth, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Gender)
+        @Html.DropDownListFor(m => m.Gender, new SelectList(new[] { "Male", "Female", "Non-binary", "Prefer not to say" }), new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", type = "email" })
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Phone)
+        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", type = "tel" })
+        @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.RaceCategory)
+        @Html.DropDownListFor(m => m.RaceCategory, new SelectList(new[] { "Full Marathon", "Half Marathon", "10k", "5k" }), new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.RaceCategory, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.TShirtSize)
+        @Html.DropDownListFor(m => m.TShirtSize, new SelectList(new[] { "Small", "Medium", "Large", "X-Large", "XX-Large" }), new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TShirtSize, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group form-check">
+        @Html.CheckBoxFor(m => m.AgreeToTerms, new { @class = "form-check-input" })
+        @Html.LabelFor(m => m.AgreeToTerms, "I agree to the terms and conditions", new { @class = "form-check-label" })
+        @Html.ValidationMessageFor(m => m.AgreeToTerms, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
