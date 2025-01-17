@@ -1,20 +1,20 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -25,17 +25,17 @@ body {
 .box {
     background-color: white;
     padding: 30px;
-    border-radius: 10px; /* Rounded corners */
-    border: 2px solid #ccc; /* Add a light border around the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px; /* Set a height for the box */
-    margin-top: 150px; /* Adjust the top margin */
-    width: 300px; /* Optional: Set a fixed width for the box */
+    height: 200px;
+    margin-top: 150px;
+    width: 300px;
     margin-left: 500px;
 }
 
@@ -57,27 +57,54 @@ h1 {
     letter-spacing: 1px;
 }
 
-.register-btn:hover {
-     background-color: #45a049;
-}
+    .register-btn:hover {
+        background-color: #45a049;
+    }
 
 form {
-    width: 50%; /* Make form elements span the full width of the box */
+    width: 50%;
 }
 
 .box-form {
     background-color: white;
-    padding: 20px; /* Reduced padding for compactness */
+    padding: 20px;
     border-radius: 10px;
-    border: 2px solid #ccc; /* Light border */
+    border: 2px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: justify; /* Align text to the left for better form readability */
+    text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 550px; /* Set a fixed width */
-    margin-top: 50px; /* Push the form down */
-    overflow: auto; /* Allow scroll if the content overflows */
-    height: 500px; /* Let the height adjust to content */
+    width: 550px;
+    margin-top: 50px;
+    overflow: auto;
+    height: 500px;
+}
+
+.box_Form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    margin-left: 400px;
+}
+
+  
+
+.box_view {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
 }

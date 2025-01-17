@@ -1,11 +1,12 @@
 ﻿@model Marathon_Registration.Models.UserModel
 
-<h1>Register for the Marathon</h1>
 
 <form asp-action="Privacy" method="post">
     @Html.AntiForgeryToken()
 
+    <div class="box_Form">
     <div class="form-group">
+        <h1> Enter Your Details: </h1>
         @Html.LabelFor(m => m.FirstName)
         @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
@@ -59,5 +60,6 @@
         @Html.ValidationMessageFor(m => m.AgreeToTerms, "", new { @class = "text-danger" })
     </div>
 
-    <button type="submit" class="btn btn-primary">Register</button>
+    <button type="submit" class="register-btn">Register</button>
+    </div>
 </form>

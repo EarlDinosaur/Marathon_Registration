@@ -28,3 +28,4 @@ D:\Earl Gem Llesis\sources\Marathon_Registration\obj\Debug\net8.0\refint\Maratho
 D:\Earl Gem Llesis\sources\Marathon_Registration\obj\Debug\net8.0\Marathon_Registration.pdb
 D:\Earl Gem Llesis\sources\Marathon_Registration\obj\Debug\net8.0\Marathon_Registration.genruntimeconfig.cache
 D:\Earl Gem Llesis\sources\Marathon_Registration\obj\Debug\net8.0\ref\Marathon_Registration.dll
+D:\Earl Gem Llesis\sources\Marathon_Registration\obj\Debug\net8.0\Marathon_Registration.sourcelink.json

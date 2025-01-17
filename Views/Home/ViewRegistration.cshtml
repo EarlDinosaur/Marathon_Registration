@@ -1,7 +1,9 @@
 ﻿@model List<Marathon_Registration.Models.UserModel>
 
-<h1>Registered Participants</h1>
 
+
+<div class="box_view">
+    <h1>Registered Participants</h1>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -32,6 +34,8 @@
     </tbody>
 </table>
 
-<div class="mt-3">
-    <a asp-action="Index" class="btn btn-secondary">Return to Index</a>
+<a href="@Url.Action("Index")">
+     <button class="register-btn">Register Again</button>
+</a>
+
 </div>
